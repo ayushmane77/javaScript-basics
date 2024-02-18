@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+.body_nav{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: bisque;
+    position: fixed;
+    font-size: 2em;
+    font-weight: bolder;
+    top:0;
+    z-index: 1000;
+}
+.img_logo{
+    left:10px;
+}
+ul.body_ul{
+    list-style-type: none;
+    list-style: none;
+}
+div.ul_li{
+    display: flex;
+    justify-content:space-evenly;
+    gap:30px;
+    /*flex-wrap: nowrap;*/
+}
+form{
+    padding: 1em;
+    right:10px;
+    display: flex;
+    gap: 25px;
+}
+.input-box{
+    padding: 1.0em;
+    font-size: 1rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.input-button{
+    padding: 1rem;
+    font-size: 0.6em;
+    border-radius: 14px;
+    box-shadow: 0px 3px 5px #233D4D;
+    font-family:cursive;
+    background-color: #153B50;
+    color: white;
+}
+.container{
+    
+    display: flex;
+    flex-direction: row;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    background-color: black;
+    padding: 20px;
+}
+.container img{
+    width: 300px;
+    max-width: 100%;
+    padding: 10px;
+}
+.container img:hover{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.body_footer {
+    margin-top: 10px;
+    
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.contact-info {
+    margin: 0 auto;
+    max-width: 600px;
+}
+.contact-info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+nav a:hover{
+    
+    cursor: pointer;
+    color: #14110F;
+}
+.footer_ul{
+    color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+    gap: 60px;
+}
+.footer_ul a:hover{
+    color: aqua;
+}
+
+
+
+@media (max-width:1073px){
+    .body_nav{
+        background-color: lightgreen;
+        display: flex;
+        align-items: center;
+    justify-content: space-between;
+    
+    }
+    div.ul_li{
+        display: flex;
+        justify-content:space-evenly;
+        gap:10px;
+    }
+}
